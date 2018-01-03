@@ -29,3 +29,9 @@ int main(){
 	cout.setf(ios::fixed);
 	cout.setf(ios::showpoint);
 	cout.precision(4);
+	
+	// AMBIL NILAI MAX TIAP KRITERIA
+	for(x=0; x<5; x++) {
+		arrayM[x] = max(array[0][x], max(array[1][x],array[2][x]));
+	}
+	
