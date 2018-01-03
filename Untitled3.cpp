@@ -35,3 +35,10 @@ int main(){
 		arrayM[x] = max(array[0][x], max(array[1][x],array[2][x]));
 	}
 	
+		// BUAT MATRIKS R
+	for(x=0; x<3; x++) {
+		for(y=0; y<5; y++) {
+			matrixR[x][y] = array[x][y] / arrayM[y];
+		}
+	}
+
