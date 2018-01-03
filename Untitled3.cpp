@@ -55,3 +55,24 @@ int main(){
 			arrayH[x] += matrixRxW[x][y];
 		}
 	}
+	
+		// MENAMPILKAN NILAI
+	cout << "MATRIKS X :" << endl;
+	tampilMatrix3x5(array);
+
+	cout << "MATRIKS R :" << endl;
+	tampilMatrix3x5(matrixR);
+
+	cout << "BOBOT W :"<<endl;
+	cout << arrayW[0] << " | " << arrayW[1] << " | " << arrayW[2] << " | " << arrayW[3] << " | " << arrayW[4] << endl;
+	cout << endl;
+
+	cout << "MATRIKS R * W :" << endl;
+	tampilMatrix3x5(matrixRxW);
+
+	cout << "HASIL AKHIR  :"<<endl;
+	for(x=0; x<3; x++) {
+		cout << "Nilai A" << x+1 << " : " << arrayH[x] << endl;
+	}
+}
+
